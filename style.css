@@ -114,3 +114,6 @@ body {
   border: 0;
   transition: all .2s ease;
 }
+.addthis_inline_share_toolbox {
+	text-align: center;
+}

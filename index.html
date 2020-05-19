@@ -4,13 +4,16 @@
 <head>
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+	<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ec39e7f78c3035f"></script>
 </head>
 
 <body>
     <div>Teachable Machine Image Model</div>
     <button type="button" onclick="init()">Start</button>
     <button type="button" onclick="predict()">예측</button>
-
+	
+	<br><br>
+	
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <div class="file-upload">
         <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
@@ -30,6 +33,9 @@
             </div>
         </div>
     </div>
+	<br><br>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<div class="addthis_inline_share_toolbox"></div>
 
     <div id="webcam-container"></div>
     <div id="label-container"></div>
