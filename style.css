@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background-color: #eeeeee;
+  background-color: #00CED1;
 }
 
 .file-upload {
@@ -10,23 +10,8 @@ body {
   padding: 20px;
 }
 
-.file-upload-btn {
-  width: 100%;
-  margin: 0;
-  color: #fff;
-  background: #1FB264;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  border-bottom: 4px solid #15824B;
-  transition: all .2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 .file-upload-btn:hover {
-  background: #1AA059;
+  background: #00CED1;
   color: #ffffff;
   transition: all .2s ease;
   cursor: pointer;
@@ -55,13 +40,13 @@ body {
 
 .image-upload-wrap {
   margin-top: 20px;
-  border: 4px dashed #1FB264;
+  border: 4px dashed #00CED1;
   position: relative;
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
-  background-color: #1FB264;
+  background-color: #00CED1;
   border: 4px dashed #ffffff;
 }
 
@@ -77,7 +62,7 @@ body {
 .drag-text h3 {
   font-weight: 100;
   text-transform: uppercase;
-  color: #15824B;
+  color: #00CED1;
   padding: 60px 0;
 }
 
@@ -92,11 +77,11 @@ body {
   width: 200px;
   margin: 0;
   color: #fff;
-  background: #cd4535;
+  background: #00CED1;
   border: none;
   padding: 10px;
   border-radius: 4px;
-  border-bottom: 4px solid #b02818;
+  border-bottom: 4px solid #20B2AA;
   transition: all .2s ease;
   outline: none;
   text-transform: uppercase;
@@ -104,7 +89,7 @@ body {
 }
 
 .remove-image:hover {
-  background: #c13b2a;
+  background: #00CED1;
   color: #ffffff;
   transition: all .2s ease;
   cursor: pointer;
@@ -116,4 +101,19 @@ body {
 }
 .addthis_inline_share_toolbox {
 	text-align: center;
+}
+
+.result {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #00CED1;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 6px solid #20B2AA;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
 }
