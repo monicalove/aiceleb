@@ -35,6 +35,8 @@
 
 		<div class="file-upload-content">
 			<img class="file-upload-image" id="face-image" alt="your image" />
+			<p class="result-message"></p>
+			</p>
 			<div id="label-container"></div>
 			<button type="button" onclick="predict()" class="r">Result</button>
 			<div class="image-title-wrap">
@@ -110,8 +112,50 @@
 			var image = document.getElementById("face-image")
 			const prediction = await model.predict(image, false);
 			prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
-		//	prediction.sort((a, b) => parseFloat(b.probability) - parseFLoat(a.probability));
-			
+			console.log(prediction[0].className);
+			console.log(prediction[0].className);
+			var resultmessage;
+			switch (prediction[0].className) {
+				case "가인":
+					resultmessage = "가인 닮았어요"
+					break;
+				case "공찬":
+					resultmessage = "공찬 닮았어요"
+					break;
+				case "차은우":
+					resultmessage = "차은우 닮았어요"
+					break;
+				case "닉쿤":
+					resultmessage = "닉쿤 닮았어요"
+					break;
+				case "전지현":
+					resultmessage = "전지현 닮았어요"
+					break;
+				case "설현":
+					resultmessage = "설현 닮았어요"
+					break;
+				case "아이유":
+					resultmessage = "아아유 닮았어요"
+					break;
+				case "옹성우":
+					resultmessage = "옹성우 닮았어요"
+					break;
+				case "유승호":
+					resultmessage = "유승호 닮았어요"
+					break;
+				case "한예슬":
+					resultmessage = "한예슬 닮았어요"
+					break;
+				case "규현":
+					resultmessage = "규현 닮았어요"
+					break;
+				case "박서준":
+					resultmessage = "박서준 닮았어요"
+					break;
+				default:
+					resultmessage = "나랑 닮은 연예인"
+			}
+			$('.result-message').html(resultmessage);
 			for (let i = 0; i < maxPredictions; i++) {
 				const classPrediction =
 					prediction[i].className + ": " + prediction[i].probability.toFixed(2);
