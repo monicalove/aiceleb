@@ -119,8 +119,13 @@ body {
 }
 
 .result-message {
-	color: #00CED1;
+	color: pink;
 	font-size: 30px;
+	font-weight: bold;
+}
+.result-message1 {
+	color: #00CED1;
+	font-size: 20px;
 	font-weight: bold;
 }
 .label-container {

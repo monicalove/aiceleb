@@ -35,7 +35,9 @@
 
 		<div class="file-upload-content">
 			<img class="file-upload-image" id="face-image" alt="your image" />
+			<link rel=”shortcut icon” href=”https://66.media.tumblr.com/tumblr_m230rsaq7p1qfamg6.png” />
 			<p class="result-message"></p>
+			<p class="result-message1"></p>
 			<div class="label-container" id="label-container"></div>
 			<button type="button" onclick="predict()" class="r">Result</button>
 			<div class="image-title-wrap">
@@ -45,7 +47,8 @@
 			</div>
 		</div>
 	</div>
-	<br><br>
+	<br>
+	<br>
 
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 	<div class="addthis_inline_share_toolbox"></div>
@@ -115,79 +118,78 @@
 			var resultmessage;
 			switch (prediction[0].className) {
 				case "가인":
-					resultmessage = "가인 닮았어요!!"
+					resultmessage = "✿가인 닮았어요!!"
 					break;
 				case "공찬":
-					resultmessage = "공찬 닮았어요!!"
+					resultmessage = "✿공찬 닮았어요!!"
 					break;
 				case "차은우":
-					resultmessage = "차은우 닮았어요!!"
+					resultmessage = "✿차은우 닮았어요!!"
 					break;
 				case "닉쿤":
-					resultmessage = "닉쿤 닮았어요!!"
+					resultmessage = "✿닉쿤 닮았어요!!"
 					break;
 				case "전지현":
-					resultmessage = "전지현 닮았어요!!"
+					resultmessage = "✿전지현 닮았어요!!"
 					break;
 				case "설현":
-					resultmessage = "설현 닮았어요!!"
+					resultmessage = "✿설현 닮았어요!!"
 					break;
 				case "아이유":
-					resultmessage = "아아유 닮았어요!!"
+					resultmessage = "✿아아유 닮았어요!!"
 					break;
 				case "옹성우":
-					resultmessage = "옹성우 닮았어요!!"
+					resultmessage = "✿옹성우 닮았어요!!"
 					break;
 				case "유승호":
-					resultmessage = "유승호 닮았어요!!"
+					resultmessage = "✿유승호 닮았어요!!"
 					break;
 				case "한예슬":
-					resultmessage = "한예슬 닮았어요!!"
+					resultmessage = "✿한예슬 닮았어요!!"
 					break;
 				case "규현":
-					resultmessage = "규현 닮았어요!!"
+					resultmessage = "✿규현 닮았어요!!"
 					break;
 				case "박서준":
-					resultmessage = "박서준 닮았어요!!"
+					resultmessage = "✿박서준 닮았어요!!"
 					break;
 				case "보아":
-					resultmessage = "보아 닮았어요!!"
+					resultmessage = "✿보아 닮았어요!!"
 					break;
 				case "태연":
-					resultmessage = "태연 닮았어요!!"
+					resultmessage = "✿태연 닮았어요!!"
 					break;
 				case "하니":
-					resultmessage = "하니 닮았어요!!"
+					resultmessage = "✿하니 닮았어요!!"
 					break;
 				case "백현":
-					resultmessage = "백현 닮았어요!!"
+					resultmessage = "✿백현 닮았어요!!"
 					break;
 				case "뷔":
-					resultmessage = "뷔 닮았어요!!"
+					resultmessage = "✿뷔 닮았어요!!"
 					break;
 				case "강다니엘":
-					resultmessage = "강다니엘 닮았어요!!"
+					resultmessage = "✿강다니엘 닮았어요!!"
 					break;
 				case "공효진":
-					resultmessage = "규현 닮았어요!!"
+					resultmessage = "✿규현 닮았어요!!"
 					break;
 				case "박보영":
-					resultmessage = "박보영 닮았어요!!"
-					break;					
+					resultmessage = "✿박보영 닮았어요!!"
+					break;
 				default:
-					resultmessage = "나랑 닮은 연예인"
-
+					resultmessage = "✿나랑 닮은 연예인"
 			}
 			$('.result-message').html(resultmessage);
-			
+			var resultmessage1;
+			resultmessage1 = "✦ 셀럽 TOP3 ✦"
+			$('.result-message1').html(resultmessage1);
 			for (let i = 0; i < 3; i++) {
 				const classPrediction =
-					prediction[i].className + " : " + prediction[i].probability.toFixed(2)*100 + " % " ;
+					prediction[i].className + " : " + prediction[i].probability.toFixed(2) * 100 + " % ";
 				labelContainer.childNodes[i].innerHTML = classPrediction;
 			}
-
 			// document.write('창 띄우기 <br> line');
-			
 			// for (let i = 0; i < maxPredictions; i++) {
 			// 	const classPrediction =
 			// 		prediction[i].className + ": " + prediction[i].probability.toFixed(2);
