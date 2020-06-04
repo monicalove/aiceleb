@@ -90,7 +90,7 @@
 		// More API functions here:
 		// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 		// the link to your model provided by Teachable Machine export panel
-		const URL = "https://teachablemachine.withgoogle.com/models/4TW-t0jna/";
+		const URL = "https://teachablemachine.withgoogle.com/models/YKShBDbgF/";
 		async function init() {
 			const modelURL = URL + "model.json";
 			const metadataURL = URL + "metadata.json";
@@ -150,8 +150,33 @@
 				case "박서준":
 					resultmessage = "박서준 닮았어요!!"
 					break;
+				case "보아":
+					resultmessage = "보아 닮았어요!!"
+					break;
+				case "태연":
+					resultmessage = "태연 닮았어요!!"
+					break;
+				case "하니":
+					resultmessage = "하니 닮았어요!!"
+					break;
+				case "백현":
+					resultmessage = "백현 닮았어요!!"
+					break;
+				case "뷔":
+					resultmessage = "뷔 닮았어요!!"
+					break;
+				case "강다니엘":
+					resultmessage = "강다니엘 닮았어요!!"
+					break;
+				case "공효진":
+					resultmessage = "규현 닮았어요!!"
+					break;
+				case "박보영":
+					resultmessage = "박보영 닮았어요!!"
+					break;					
 				default:
 					resultmessage = "나랑 닮은 연예인"
+
 			}
 			$('.result-message').html(resultmessage);
 			
